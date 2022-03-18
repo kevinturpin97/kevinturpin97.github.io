@@ -1,62 +1,90 @@
+import { getNextKeyDef } from "@testing-library/user-event/dist/keyboard/getNextKeyDef";
+import img_1 from "../../assets/images/banner2.png";
+
 function BodyHome() {
     return (
         <div className="container-fluid">
-            <div className="row">
+            <div className="row flex-row">
                 <div className="col-md-5">
+                    <h2>3D ISOMETRIC</h2>
                     <canvas id="canvas">Navigateur incompatible</canvas>
-                    <h3>3D ISOMETRIC</h3>
-                    <canvas id="blur">Navigateur incompatible</canvas>
+                </div>
+                <div className="col-md-5">
+                    <h2>3D ISOMETRIC</h2>
+                    <canvas id="city">Navigateur incompatible</canvas>
+                    <button className="btn btn-primary" onClick={draw_city}>Draw city</button>
                 </div>
             </div>
-            <button onClick={draw} className="btn btn-danger">Draw Grid</button>
-            <button onClick={see_bg} className="btn btn-danger">Add effect</button>
         </div>
     );
 }
 
-function anim_background()
-{
-    var canvas = document.getElementById("blur");
-    var ctx = canvas.getContext("2d");
-
-    canvas.width = 700;
-    canvas.height = 700;
-    
-    var centerX = canvas.height / 2;
-    var centerY = canvas.height / 2;
-
-    ctx.fillStyle = "white";
-
-    for (let i = 0; i < 10; i++) {
-        ctx.beginPath();
-        ctx.arc(centerX * (Math.random() * 2), centerY * (Math.random() * 2), Math.random() * 25, 0, 2 * Math.PI);
-        ctx.fill();
-        ctx.closePath();
+var i = 0;
+var document_ready = setInterval(() => {
+    var banner = document.getElementById("banner");
+    if (i < 1.0) {
+        draw().style.opacity = i;
+        banner.style.opacity = i;
+        
+        i += 0.1;
+    } else {
+        clearInterval(document_ready);
     }
-}
+}, 50);
 
-function see_bg()
+function draw_city()
 {
-    anim_background();
-    var canvas = document.getElementById("blur");
-    var opa = 1;
-    var a = setInterval(() => {
-        if (opa < 0) {
-            anim_background();
-            var b = setInterval( ()=> {
-                canvas.style.opacity = opa;
-                opa += 0.01;
-                if (opa >= 1) {
-                    clearInterval(b);
-                }
-            }, 100)
+    var city = document.getElementById("city");
+    var ctx = city.getContext("2d");
+
+    city.width = 600;
+    city.height = 500;
+
+    var h = city.clientWidth / 2;
+    var w = city.clientHeight / 2;
+
+    var x_before = 0;
+    var color = [
+        "#77aaff",
+        "#99ccff",
+        "#bbeeff",
+        "#5588ff",
+        "#3366ff",
+    ];
+
+    for (let i = 0; i < 8; i++) {
+        var random_y = Math.floor(Math.random() * 100);
+        var random_x = Math.floor(Math.random() * 300) + 50;
+        var item = color[Math.floor(Math.random()*color.length)];
+        ctx.fillStyle = item;
+        ctx.beginPath();
+        ctx.moveTo(w, h);
+
+        ctx.rect(x_before, h + random_y, random_x, h);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        for (let i = 0; i < 5; i++) {
+            ctx.rect((x_before + ((random_x  / 5.5) * i)) + (random_x / 12), h + random_y + 10, (random_x / 10), (h / 10));
+            ctx.fillStyle = "orange";
+            ctx.fill();
         }
-        canvas.style.opacity = opa;
-        opa -= 0.01;
-    }, 50);
+
+        ctx.stroke();
+        ctx.closePath();
+        x_before += random_x;
+    }
+
+    
+    
+
+    return city;
 }
 
-function draw() {
+function draw() 
+{
     var canva = document.getElementById("canvas");
     var ctx = canva.getContext('2d');
 
@@ -108,8 +136,7 @@ function draw() {
     }
 
     ctx.translate(-(26 * 50), -(5 * 50)); // Reinitialise
-    var my_count = 0;
-
+    
     for (let i = 1; i < 6; i++) {
         ctx.beginPath();
         if (i === 1) {
@@ -158,6 +185,7 @@ function draw() {
         ctx.fill();
         ctx.closePath();
     }
+    return canva;
 }
 
 export default BodyHome;
