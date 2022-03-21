@@ -4,7 +4,7 @@ import img_1 from "../../assets/images/banner2.png";
 function Header()
 {
     return (
-        <header>
+        <header className="bg-dark">
             <div className="row justify-content-center">
                 <h1 className="text-center">It's a pleasure.</h1>
                 <div className="col-md-7" id="banner">
@@ -15,7 +15,7 @@ function Header()
                <div className="container-fluid justify-content-center">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link to={"/"} className="nav-link">Home</Link>
+                            <Link to={"#home"} className="nav-link">Home</Link>
                         </li>    
                         <li className="nav-item">
                             <Link to={"/me"} className="nav-link">Me</Link>
