@@ -5,6 +5,10 @@ function Header()
 {
     return (
         <header className="bg-dark">
+            <label className="switch">
+                <input type="checkbox" />
+                <span className="slider"></span>
+            </label>
             <div className="row justify-content-center">
                 <h1 className="text-center">It's a pleasure.</h1>
                 <div className="col-md-7" id="banner">
