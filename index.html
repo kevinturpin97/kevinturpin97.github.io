@@ -1,331 +1,531 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8" />
-	<meta name="viewport"
-		content="width=device-width,
-				initial-scale=1" />
 
-	<!-- Bootstrap CSS -->
-	<link
-	href=
-"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity=
-"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-	crossorigin="anonymous"
-	/>
-	<link rel="stylesheet"
-		href="style.css" />
-	<link rel="preconnect"
-		href="https://fonts.gstatic.com" />
-	<link
-	href=
-"https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-	rel="stylesheet"
-	/>
-	<title>GFG</title>
-</head>
-<body>
-	<section id="navbar">
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container-fluid">
-		<a class="navbar-brand" href="#">
-			Geeks for Geeks
-			</a>
-		<button
-			class="navbar-toggler"
-			type="button"
-			data-bs-toggle="collapse"
-			data-bs-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent"
-			aria-expanded="false"
-			aria-label="Toggle navigation"
-		>
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse"
-			id="navbarSupportedContent">
-			<ul class="navbar-nav m-auto">
-			<li class="nav-item">
-				<a class="nav-link active"
-				aria-current="page"
-				href="#">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link"
-				href="#service">Services</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link"
-				href="#about">About Us</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link"
-				href="#product">Products</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link"
-				href="#social">Contact Us</a>
-			</li>
-			</ul>
-		</div>
-		</div>
-	</nav>
-	</section>
+    <head>
 
-	<!-- banner -->
-	<section id="banner">
-	<div class="container-fluid" id="banner-container">
-		<div class="row" id="banner-row">
-		<div class="col-md-6" id="banner-col">
-			<h3>
-			BEST PROFESSIONAL WEBSITE DESIGN
-			SOFTWARE DEVELOPMENT COMPANY
-			</h3>
-			
-<p>
-			The fastest way to grow your business with the leader in
-			Technology
-			</p>
+		<!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Bootstrap 4 One Page Website Tutorial</title>
 
-			<div class="d-grid gap-2 d-md-flex justify-content-center">
-			<a class="btn btn-primary"
-				href="#"
-				role="button">Contact Us</a>
-			</div>
-		</div>
-		<div class="col-md-6" id="banner-col2">
-			<img
-			class="img-responsive rounded mx-auto d-block"
-			src="images/gfg.png"
-			alt=""
-			/>
-		</div>
-		</div>
-	</div>
-	</section>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media-queries.css">
 
-	<!-- services -->
-	<section id="service">
-	<h1 class="text-center">SERVICES</h1>
-	<div class="container-fluid" id="service-container">
-		<div class="row" id="banner-row">
-		<div class="col-md-4" id="service-col1">
-			<img
-			src="images/gfg.png"
-			class="img-fluid rounded mx-auto d-block"
-			alt="..."
-			/>
-			<h3>Website Design</h3>
-			
-<p>
-			User Experience Design.
-			Website Content Strategy.
-			Cross Browser
-			and Platform Testing.
-			</p>
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-		</div>
-		<div class="col-md-4" id="service-col2">
-			<img
-			src="images/gfg.png"
-			class="img-fluid rounded mx-auto d-block"
-			alt="..."
-			/>
-			<h3>Bulk SMS</h3>
-			
-<p>
-			1.Toll Free Number
-			2. IVR
-			3. Virtual Number
-			4. Political or any
-			Voice Broadcasting
-			</p>
+    </head>
 
-		</div>
-		<div class="col-md-4" id="service-col3">
-			<img
-			src="images/gfg.png"
-			class="img-fluid rounded mx-auto d-block"
-			alt="..."
-			/>
-			<h3>Payment Gateways</h3>
-			
-<p>
-			PayU India is the flagship company of
-			Naspers group which is a $25
-			Billion internet and media conglomerate
-			listed on London and
-			Johannesburg stock exchanges respectively.
-			</p>
+    <body>
 
-		</div>
-		</div>
-	</div>
-	</section>
-	<hr />
+		<!-- Top menu -->
+		<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Bootstrap 4 One Page Website Tutorial</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNav">
+			        <ul class="navbar-nav ml-auto">
+			            <li class="nav-item">
+			                <a class="nav-link scroll-link" href="#top-content">Top</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link scroll-link" href="#services">Services</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link scroll-link" href="#about-us">About</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link scroll-link" href="#portfolio">Work</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link scroll-link" href="#testimonials">Clients</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link scroll-link" href="#blog">Blog</a>
+			            </li>
+			        </ul>
+			    </div>
+		    </div>
+		</nav>
 
-	<!-- about Us -->
-	<section id="about">
-	<h1 class="text-center">About Us</h1>
-	<div class="container-fluid" id="about-container">
-		<div class="row" id="banner-row">
-		<div class="col-md-6" id="about-col">
-			<h3>Why Us</h3>
-			<ul>
-			<li>
-				Probuz is all about Delivering High
-				Quality web design and development
-				services, Cost effective and
-				reliable solutions.
-			</li>
-			<li>SCHOOL/COLLEGE MANAGEMENT SOFTWARE
-				(CAMPUS PRO)</li>
-			<li>
-				Let us take care of your Business needs.
-				Customer Productivity is our Priority.
-			</li>
-			<li>Our expertise in Business includes</li>
-			</ul>
-		</div>
-		<div class="col-md-6" id="banner-col2">
-			<img
-			class="img-responsive rounded mx-auto d-block"
-			src="images/gfg.png"
-			alt=""
-			/>
-		</div>
-		</div>
-	</div>
-	</section>
-	<hr />
-	<!-- product -->
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="container">
+            	
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text">
+                        <h1 class="wow fadeInLeftBig">Bootstrap 4 Website Tutorial</h1>
+                        <div class="description wow fadeInLeftBig">
+                        	<p>
+                         	This is a free responsive one page template made with the Bootstrap framework. 
+                         	Check it out now. Download it, customize and use it as you like!
+                        	</p>
+                        </div>
+                        <div class="top-big-link wow fadeInUp">
+                        	<a class="btn btn-primary btn-link-1" href="http://azmind.com">Download it</a>
+                        	<a class="btn btn-primary btn-link-2 scroll-link" href="#services">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>            
+        </div>
+        
+        <!-- Services -->
+        <div class="services-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col services section-description wow fadeIn">
+	                    <h2>Our Services</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            <div class="row">
+                	<div class="col-md-4 services-box wow fadeInUp">
+                		<div class="row">
+                			<div class="col-md-4">
+			                	<div class="services-box-icon">
+			                		<i class="fas fa-magic"></i>
+			                	</div>
+		                	</div>
+	                		<div class="col-md-8">
+	                    		<h3>Web Design</h3>
+	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+	                    	</div>
+	                    </div>
+                    </div>
+                    <div class="col-md-4 services-box wow fadeInDown">
+	                	<div class="row">
+                			<div class="col-md-4">
+			                	<div class="services-box-icon">
+			                		<i class="fas fa-cog"></i>
+			                	</div>
+		                	</div>
+	                		<div class="col-md-8">
+	                    		<h3>UI / UX</h3>
+	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+	                    	</div>
+	                    </div>
+                    </div>
+                    <div class="col-md-4 services-box wow fadeInUp">
+	                	<div class="row">
+                			<div class="col-md-4">
+			                	<div class="services-box-icon">
+			                		<i class="fab fa-google"></i>
+			                	</div>
+		                	</div>
+	                		<div class="col-md-8">
+	                    		<h3>Marketing</h3>
+	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+	                    	</div>
+	                    </div>
+                    </div>
+	            </div>
+	        </div>
+        </div>
 
-	<section id="product">
-	<h1 class="text-center">Our Products</h1>
-	<div class="container-fluid" id="product-container">
-		<div class="row" id="banner-row">
-		<div class="col-md-6" id="about-col">
-			<img
-			class="img-responsive rounded mx-auto d-block"
-			src="images/gfg.png"
-			alt=""
-			/>
-		</div>
-		<div class="col-md-6" id="product-col2">
-			<h3>Product List</h3>
+        <!-- About us -->
+        <div class="about-us-container section-container section-container-gray-bg">
+	        <div class="container">
+	            <div class="row">
+	            	<div class="col-12 col-lg-7 about-us-box wow fadeInLeft">
+	                    <div class="about-us-box-text">
+	                    	<h3>About Us</h3>
+	                    	<p class="medium-paragraph">
+	                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+	                    		sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
+	                    	</p>
+	                    	<p>
+	                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+	                    		Ut wisi enim ad minim veniam, quis nostrud. 
+	                    		Exerci tation ullamcorper suscipit <a href="#">lobortis nisl</a> ut aliquip ex ea commodo consequat. 
+	                    		Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl. 
+	                    	</p>
+	                    	<p>
+	                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+	                    		Ut wisi enim ad minim veniam, quis nostrud.
+	                    	</p>
+	                    </div>
+	                </div>
+	                <div class="col-12 col-lg-5 about-us-box wow fadeInUp">
+	                	<div class="about-us-box-img">
+	                    	<img src="assets/img/about/1.jpg" alt="about" data-at2x="assets/img/about/1.jpg">
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
 
-			<ul>
-			<li>CLINIC MANAGMENT SYSTEM</li>
-			<li>SCHOOL/COLLEGE MANAGEMENT
-				SOFTWARE (CAMPUS PRO)</li>
-			<li>SERVICE MANAGEMENT SOFTWARE</li>
-			<li>E-COMMERCE WEBSITE</li>
-			</ul>
-		</div>
-		</div>
-	</div>
-	</section>
-	<hr />
-	<!-- social -->
-	<section id="social">
-	<h1 class="text-center">Get In Touch</h1>
-	<div class="d-grid gap-2 d-md-flex justify-content-center">
-		<div class="row align-items-center" id="social-row">
-		<div class="col-md-4 social-col">
-			<a href=""
-			><img
-				class="img-responsive rounded mx-auto d-block"
-				src="images/gfg.png"
-				alt=""
-			/></a>
-		</div>
-		<div class="col-md-4 social-col">
-			<a href=""
-			><img
-				class="img-responsive rounded mx-auto d-block"
-				src="images/icons8-instagram-64.png"
-				alt=""
-			/></a>
-		</div>
-		<div class="col-md-4 social-col">
-			<a href=""
-			><img
-				class="img-responsive rounded mx-auto d-block"
-				src="images/icons8-twitter-64.png"
-				alt=""
-			/></a>
-		</div>
-		</div>
-	</div>
-	</section>
+		<!-- More services -->
+        <div class="more-services-container section-container">
+	        <div class="container">
+	        	
+	            <div class="row">
+	                <div class="col more-services section-description wow fadeIn">
+	                    <h2>More Services</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-md-6 more-services-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="more-services-box-icon">
+	                				<i class="fab fa-twitter"></i>
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3>Ut wisi enim ad minim</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-md-6 more-services-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="more-services-box-icon">
+	                				<i class="fas fa-pencil-alt"></i>
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3>Sed do eiusmod tempor</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-md-6 more-services-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="more-services-box-icon">
+	                				<i class="fas fa-cloud"></i>
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3>Quis nostrud exerci tat</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-md-6 more-services-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="more-services-box-icon">
+	                				<i class="fab fa-pinterest"></i>
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3>Minim veniam quis nostrud</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
 
-	<!-- footer -->
-	<section id="footer">
-	<section id="banner">
-		<div class="container-fluid" id="banner-container">
-		<div class="row" id="banner-row">
-			<div class="col-md-4" id="footer-col1">
-			<h3>My Website</h3>
-				
-<p>
-				At XYZ we believe that customers should
-				always get easy-to-use, best in the kind
-				and fast services.xyz has achieved
-				standards which helps customer to
-				achieve satisfaction and realize
-				value for their hard earned money.
-			</p>
+	        </div>
+        </div>
 
-			</div>
-			<div class="col-md-4" id="footer-col2">
-			<h3>Contact Us</h3>
-				
-<p>Call Us- 1800-121-6532</p>
+		<!-- Call to action -->
+        <div class="call-to-action-container section-container section-container-image-bg">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col call-to-action section-description wow fadeInLeftBig">
+	                    <p>
+	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+	                    	aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="row">
+	            	<div class="col section-bottom-button wow fadeInUp">
+                        <a class="btn btn-primary btn-link-1 scroll-link" href="#top-content">Download now</a>
+	            	</div>
+	            </div>
+	        </div>
+        </div>
+        
+        <!-- Portfolio -->
+        <div class="portfolio-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col portfolio section-description wow fadeIn">
+	                    <h2>Our Portfolio</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <p>We've completed 537 projects since we started back in 2010. Check them out!</p>
+	                </div>
+	            </div>
+	            <div class="row">
+                	<div class="col-md-4 portfolio-box wow fadeInUp">
+	                	<div class="portfolio-box-image">
+	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
+	                	</div>
+                		<h3><a href="#">Acme branding</a> <i class="fas fa-angle-right"></i></h3>
+                		<div class="portfolio-box-date"><i class="far fa-calendar"></i> March 2018</div>
+                		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+                    <div class="col-md-4 portfolio-box wow fadeInDown">
+	                	<div class="portfolio-box-image">
+	                		<img src="assets/img/portfolio/2.jpg" alt="" data-at2x="assets/img/portfolio/2.jpg">
+	                	</div>
+                		<h3><a href="#">WordPress design</a> <i class="fas fa-angle-right"></i></h3>
+                		<div class="portfolio-box-date"><i class="far fa-calendar"></i> February 2018</div>
+                		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+                    <div class="col-md-4 portfolio-box wow fadeInUp">
+	                	<div class="portfolio-box-image">
+	                		<img src="assets/img/portfolio/3.jpg" alt="" data-at2x="assets/img/portfolio/3.jpg">
+	                	</div>
+                		<h3><a href="#">Created 150 flyers</a> <i class="fas fa-angle-right"></i></h3>
+                		<div class="portfolio-box-date"><i class="far fa-calendar"></i> January 2018</div>
+                		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+	            </div>
+	            <div class="row">
+	            	<div class="col section-bottom-button wow fadeInUp">
+                        <a class="btn btn-primary btn-link-3" href="#">Load more</a>
+	            	</div>
+	            </div>
+	        </div>
+        </div>
+        
+        <!-- Testimonials -->
+        <div class="testimonials-container section-container section-container-image-bg">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col testimonials section-description wow fadeIn"></div>
+        		</div>
+        		<div class="row">
+        			<div class="col-md-10 offset-md-1 testimonial-list wow fadeInUp">
+        				
+        				<div class="tab-content" id="myTabContent">
+        					<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        						<div class="testimonial-image">
+                					<img src="assets/img/testimonials/1.jpg" alt="testimonial-1" data-at2x="assets/img/testimonials/1.jpg">
+                				</div>
+                				<div class="testimonial-text">
+	                                <p>
+	                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+	                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+	                                	Lorem ipsum dolor sit amet."<br>
+	                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
+	                                </p>
+                                </div>
+        					</div>
+        					<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+        						<div class="testimonial-image">
+                					<img src="assets/img/testimonials/2.jpg" alt="testimonial-2" data-at2x="assets/img/testimonials/2.jpg">
+                				</div>
+                				<div class="testimonial-text">
+	                                <p>
+	                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+	                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+	                                	lobortis nisl ut aliquip."<br>
+	                                	<a href="#">Minim Veniam, nostrud.com</a>
+	                                </p>
+                                </div>
+        					</div>
+        					<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+        						<div class="testimonial-image">
+                					<img src="assets/img/testimonials/3.jpg" alt="testimonial-3" data-at2x="assets/img/testimonials/3.jpg">
+                				</div>
+                				<div class="testimonial-text">
+	                                <p>
+	                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+	                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+	                                	Lorem ipsum dolor sit amet."<br>
+	                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
+	                                </p>
+                                </div>
+							</div>
+        					<div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+        						<div class="testimonial-image">
+                					<img src="assets/img/testimonials/4.jpg" alt="" data-at2x="assets/img/testimonials/4.jpg">
+                				</div>
+                				<div class="testimonial-text">
+	                                <p>
+	                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+	                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+	                                	lobortis nisl ut aliquip."<br>
+	                                	<a href="#">Minim Veniam, nostrud.com</a>
+	                                </p>
+                                </div>
+        					</div>
+        				</div>
+        				
+        				<ul class="nav nav-tabs" id="myTab" role="tablist">
+        					<li class="nav-item">
+        						<a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"></a>
+        					</li>
+        					<li class="nav-item">
+        						<a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"></a>
+        					</li>
+        					<li class="nav-item">
+        						<a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"></a>
+        					</li>
+        					<li class="nav-item">
+        						<a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false"></a>
+        					</li>
+        				</ul>
+        				
+        			</div>
+        		</div>
+        	</div>
+        </div>
+                
+        <!-- Blog -->
+        <div class="blog-container section-container">
+	        <div class="container">
+	        	
+	            <div class="row">
+	                <div class="col blog section-description wow fadeIn">
+	                    <h2>The Blog</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-md-6 blog-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="blog-box-image">
+	                				<img src="assets/img/blog/1.jpg" alt="" data-at2x="assets/img/blog/1.jpg">
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3><a href="#">Ut wisi enim ad minim</a> <i class="fas fa-angle-right"></i></h3>
+	                			<div class="blog-box-date"><i class="far fa-calendar"></i> 17 September 2018</div>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-md-6 blog-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="blog-box-image">
+	                				<img src="assets/img/blog/2.jpg" alt="" data-at2x="assets/img/blog/2.jpg">
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3><a href="#">Sed do eiusmod tempor</a> <i class="fas fa-angle-right"></i></h3>
+	                			<div class="blog-box-date"><i class="far fa-calendar"></i> 13 August 2018</div>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-md-6 blog-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="blog-box-image">
+	                				<img src="assets/img/blog/3.jpg" alt="" data-at2x="assets/img/blog/3.jpg">
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3><a href="#">Quis nostrud exerci tat</a> <i class="fas fa-angle-right"></i></h3>
+	                			<div class="blog-box-date"><i class="far fa-calendar"></i> 26 July 2018</div>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-md-6 blog-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-md-3">
+	                			<div class="blog-box-image">
+	                				<img src="assets/img/blog/4.jpg" alt="" data-at2x="assets/img/blog/4.jpg">
+	                			</div>
+	                		</div>
+	                		<div class="col-md-9">
+	                			<h3><a href="#">Minim veniam quis nostrud</a> <i class="fas fa-angle-right"></i></h3>
+	                			<div class="blog-box-date"><i class="far fa-calendar"></i> 09 June 2018</div>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	            	<div class="col section-bottom-button wow fadeInUp">
+                        <a class="btn btn-primary btn-link-3" href="#">Visit the blog</a>
+	            	</div>
+	            </div>
 
-				
-<p>Email Us- support@xyz.com</p>
+	        </div>
+        </div>
 
-			</div>
+        <!-- Footer -->
+        <footer>
+	        <div class="container">
+	        	<div class="row">
+                    <div class="col-md-5 footer-left">
+                    	<p>&copy; Bootstrap 4 One Page Website Tutorial. Download it for free on <a href="http://azmind.com">AZMIND</a>.</p>
+                    </div>
+                    
+                    <div class="col-md-6 offset-md-1 footer-right">
+                    	<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-dribbble"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col footer-bottom">
+		           		<a class="scroll-link" href="#top-content"><i class="fas fa-chevron-up"></i></a>
+		           	</div>
+                </div>
+	        </div>
+        </footer>
 
-			<div class="col-md-4" id="footer-col2">
-			<h3>Subscribe To Newsletter</h3>
-			<form>
-				<div class="mb-3">
-				<input
-					type="email"
-					placeholder="Enter Your Email"
-					class="form-control"
-					id="exampleInputEmail1"
-					aria-describedby="emailHelp"
-				/>
-				<div id="emailHelp"
-					class="form-text">
-					We'll never share your email with anyone else.
-				</div>
-				</div>
-				<button type="submit"
-						class="btn btn-primary">
-						Submit
-				</button>
-			</form>
-			</div>
-		</div>
-		</div>
-	</section>
-	</section>
 
-	<!-- Optional JavaScript; choose one of the two! -->
+        <!-- Javascript -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
 
-	<!-- Option 1: Bootstrap Bundle with Popper -->
-	<script
-	src=
-"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-	integrity=
-"sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-	crossorigin="anonymous"
-	></script>
-</body>
+    </body>
+
 </html>
