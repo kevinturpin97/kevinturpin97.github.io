@@ -1,3 +1,5 @@
+console.log('By Kevin Turpin\n\nhttp://www.github.com/kevinturpin97/');
+
 
 function scroll_to(clicked_link, nav_height) {
 	var element_class = clicked_link.attr('href').replace('#', '.');
