@@ -1,22 +1,9 @@
-# Hi, I'm Kevin Turpin 👋
+# Kévin Turpin - Portfolio
 
-## About Me
-- 💻 Software Developer
-- 🌱 Always learning and growing in the tech world
-- 👨‍💻 Working on various coding projects
+Développeur fullstack web & mobile (PHP / Symfony, React / TypeScript, React Native / Expo), Le Tampon, La Réunion.
 
-## Tech Stack
-- Languages & Frameworks
-- Tools & Technologies
-- Development Environments
+- Site : https://kevinturpin97.github.io/
+- CV : [turpin_kevin_cv.pdf](turpin_kevin_cv.pdf)
+- LinkedIn : https://www.linkedin.com/in/kevinturpin97
 
-## Get in Touch
-- GitHub: [@kevinturpin97](https://github.com/kevinturpin97)
-
-## GitHub Stats
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinturpin97&show_icons=true&theme=dark)
-
-## Recent Activity
-- 📱 Working on personal projects
-- 📚 Learning new technologies
-- 🤝 Open to collaboration
+Site statique (HTML / CSS / JS, sans dépendance), servi par GitHub Pages.
